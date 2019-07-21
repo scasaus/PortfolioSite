@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Consumer } from "../context";
+
+
 //hero component
 class Hero extends Component {
   render() {
@@ -7,8 +9,17 @@ class Hero extends Component {
       <Consumer>
         {value => {
           return (
-            <div>
-              <React.Fragment>{value.videoComponents[1].video}</React.Fragment>
+            <div className="">
+              <React.Fragment>{value.videoComponents[value.videoIndex].video}</React.Fragment>
+              <button onClick={() => {
+                (value.videoIndex - 1 === -1) ? value.videoIndex = 2 : value.videoIndex--;
+                this.forceUpdate();
+                }}>left</button>
+              <button onClick={() => {
+                (value.videoIndex + 1 === 3) ? value.videoIndex = 0 : value.videoIndex++;
+                this.forceUpdate();
+                }}>right</button>
+              <button onClick={() => {console.log(value.videoIndex)}}>display</button>
             </div>
           );
         }}

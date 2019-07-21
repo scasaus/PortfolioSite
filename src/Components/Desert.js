@@ -11,8 +11,6 @@ class Desert extends Component {
           loop
           id="heroVideo"
           poster="#"
-          controls
-          onLoadedMetadata="this.muted = true"
         >
           <source src={desertVideo} type="video/mp4" />
         </video>{" "}

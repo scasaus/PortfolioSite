@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import logo from "./Assets/leWebConst.png";
 
 class Nav extends Component {
   render() {
-    //title for the nav bar, appears in top left corner
-    const { navImage } = this.props;
-
     return (
       //navbar
       <div className="Nav">

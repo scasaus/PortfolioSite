@@ -6,7 +6,10 @@ import Mountain from "./Components/Mountain";
 
 const Context = React.createContext();
 
+
 export class Provider extends Component {
+
+
   state = {
     videoComponents: [
       {
@@ -21,7 +24,8 @@ export class Provider extends Component {
         id: 2,
         video: <Mountain />
       }
-    ]
+    ],
+    videoIndex: 0
   };
 
   render() {

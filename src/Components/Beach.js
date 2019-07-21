@@ -11,8 +11,6 @@ class Beach extends Component {
           loop
           id="heroVideo"
           poster="#"
-          controls
-          onLoadedMetadata="this.muted = true"
         >
           <source src={beachVideo} type="video/mp4" />
         </video>

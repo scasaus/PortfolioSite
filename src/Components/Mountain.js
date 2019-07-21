@@ -11,8 +11,6 @@ class Mountain extends Component {
           loop
           id="heroVideo"
           poster="#"
-          controls
-          onLoadedMetadata="this.muted = true"
         >
           <source src={mountainVideo} type="video/mp4" />
         </video>{" "}
