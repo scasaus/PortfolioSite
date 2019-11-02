@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Beach from "./Components/Beach";
 import Desert from "./Components/Desert";
-import Mountain from "./Components/Mountain";
+import Forest from "./Components/Forest";
 
 const Context = React.createContext();
 
@@ -21,7 +21,7 @@ export class Provider extends Component {
       },
       {
         id: 2,
-        video: <Mountain />
+        video: <Forest />
       }
     ],
     videoIndex: 0

@@ -20,6 +20,7 @@ body {
     bottom: 0;
     left: 0;
     overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
     right: 0;
     top: 0;
@@ -40,6 +41,7 @@ body {
     z-index: -1;
     animation: fadein 2s;
     filter: brightness(70%);
+    overflow-x: hidden;
 }
 
 .navBar {
@@ -88,4 +90,30 @@ body {
         min-height: 100vh;
     }
 
+}
+
+@media screen and (max-width:450px) {
+    .beachPage video {
+        display: none;
+    }
+
+    .beachPage img {
+        display: block !important;
+    }
+
+    .desertPage video {
+        display: none;
+    }
+
+    .desertPage img {
+        display: block !important;
+    }
+
+    .forestPage video {
+        display: none;
+    }
+
+    .forestPage img {
+        display: block !important;
+    }
 }
