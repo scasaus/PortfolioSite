@@ -4,7 +4,7 @@ import beachVideo from "./Assets/beach.mp4";
 class Beach extends Component {
   render() {
     return (
-      <div className="container Hero">
+      <div className="videoContainer">
         <video
           autoPlay
           muted

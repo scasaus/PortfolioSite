@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import desertVideo from "./Assets/desert.mp4";
 
 class Desert extends Component {
+
+
   render() {
     return (
-      <div className="container Hero">
+      <div className="videoContainer">
         <video
           autoPlay
           muted
@@ -12,7 +14,7 @@ class Desert extends Component {
           id="heroVideo"
           poster="#"
         >
-          <source src={desertVideo} type="video/mp4" />
+          <source className="videoContainer" src={desertVideo} type="video/mp4" />
         </video>{" "}
       </div>
     );

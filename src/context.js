@@ -9,7 +9,6 @@ const Context = React.createContext();
 
 export class Provider extends Component {
 
-
   state = {
     videoComponents: [
       {

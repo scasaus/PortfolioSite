@@ -4,7 +4,7 @@ import mountainVideo from "./Assets/mountain.mp4";
 class Mountain extends Component {
   render() {
     return (
-      <div className="container Hero">
+      <div className="videoContainer">
         <video
           autoPlay
           muted

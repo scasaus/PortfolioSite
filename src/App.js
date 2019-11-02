@@ -1,19 +1,17 @@
 import React from "react";
-import Nav from "./Components/Nav";
+import NavBar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 
 import { Provider } from "./context";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import "./App.css"
 
 function App() {
   return (
     <Provider>
       <div className="App">
         <div className="video-container">
-          <Nav />
-          <Hero />
+          <NavBar />
         </div>
       </div>
     </Provider>
