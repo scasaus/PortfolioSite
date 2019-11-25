@@ -1,10 +1,10 @@
 * {
-    margin: 0 !important; 
+    margin: 0 !important;
     padding: 0 !important;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -14,7 +14,9 @@ body {
 
 .test {
     color: green;
-};
+}
+
+;
 
 .videoContainer {
     bottom: 0;
@@ -27,7 +29,8 @@ body {
     z-index: -1;
 }
 
-.videoContainer img, .videoContainer video {
+.videoContainer img,
+.videoContainer video {
     display: block;
     height: auto;
     left: auto;
@@ -54,17 +57,95 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#header {
+    text-align: center;
+    width: 70%;
+    margin: auto !important;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+    background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+    background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+    max-width: 100%;
+    text-align: center;
+    padding-top: 3rem !important;
+}
+
+#header .logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 6.5rem;
+    border: solid 1px #e24065;
+    border-radius: 100%;
+}
+
+#header .logo .icon:before {
+    font-size: 2rem;
+    color: #e24065;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+#header .content {
+    border-style: solid;
+    border-color: #e24065;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right: none;
+    border-left: none;
+    max-width: 100%;
+    margin-top: 3.5rem !important;
+    width: 80%;
+}
+
+
+
+
+
+
+
 @keyframes fadein {
     from {
         opacity: 0;
-    } to {
+    }
+
+    to {
         opacity: 1;
     }
 }
 
 @supports (transform: translateX(-50%)) {
 
-    .videoContainer img, .videoContainer video {
+    .videoContainer img,
+    .videoContainer video {
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
@@ -72,9 +153,11 @@ body {
 
 }
 
-@media screen and (min-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
+@media screen and (min-aspect-ratio: 16/9) {
+    /* Make this the same aspect ratio as your video */
 
-    .videoContainer img, .videoContainer video {
+    .videoContainer img,
+    .videoContainer video {
         max-width: 100vw;
         min-width: 100vw;
         width: 100vw;
@@ -82,14 +165,24 @@ body {
 
 }
 
-@media screen and (max-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
+@media screen and (max-aspect-ratio: 16/9) {
+    /* Make this the same aspect ratio as your video */
 
-    .videoContainer img, .videoContainer video {
+    .videoContainer img,
+    .videoContainer video {
         height: 100vh;
         max-height: 100vh;
         min-height: 100vh;
     }
 
+}
+
+@media screen and (max-width: 736px) {
+    #header .logo {
+        width: 4.75rem;
+        height: 4.75rem;
+        line-height: 5.75rem;
+    }
 }
 
 @media screen and (max-width:450px) {
